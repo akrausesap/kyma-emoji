@@ -1,0 +1,22 @@
+*.py[co]
+*.DS_*
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+
+
+#Installer logs
+pip-log.txt
+
+#Translations
+*.mo
+
+#Env
+venv
+build

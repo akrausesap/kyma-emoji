@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: emoji-ui
+    labels:
+        app: emoji-ui
+        version: '1'
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            app: emoji-ui
+            version: '1'
+    template:
+        metadata:
+            labels: 
+                app: emoji-ui
+                version: '1'
+        spec:
+            containers: 
+                - name: emoji-ui 
+                  image: andy008/emoji-react:0.0.1 
+                  imagePullPolicy: Always
+                  resources:
+                      requests:
+                         cpu: "0.25"
+                         memory: "128Mi"
+                      limits:
+                         cpu: "0.5"
+                         memory: "256Mi"
+                  ports: 
+                    - name: http-traffic 
+                      containerPort: 80 
+                      protocol: TCP
+                  volumeMounts:
+                    - name: nginx
+                      mountPath: /etc/nginx/conf.d
+            volumes:
+                - name: nginx
+                  configMap:
+                      name: nginx
