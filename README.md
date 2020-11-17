@@ -11,7 +11,7 @@ To leverage these samples we have tried to minimize the software installation re
    1. Mac: https://my.vmware.com/web/vmware/evalcenter?p=fusion-player-personal
    2. Windows: https://my.vmware.com/en/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_workstation_player/16_0
    
-This will enable you to import and work with the provided VM image that can be found here: https://sap-my.sharepoint.com/:u:/p/and_krause/ETYA5D2nJIxLvwvAGvnwlqQBGbWrMNF-ePym4TY4UA3vCw?e=MArq5s
+This will enable you to import and work with the provided VM image. It is downloadable here: https://sap-my.sharepoint.com/:u:/p/and_krause/EQXwqMrQv6hMkPpLs3Xgf_YBdOxb7ZvD1TBKAUNNGLbLhw?e=OhF8sh
 
 The username/password combination for the Linux OS installed is (`hacker/sap`). This VM is going to be your local work environment. You should not need to install software on your local laptop.
 

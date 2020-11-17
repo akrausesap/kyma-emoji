@@ -31,7 +31,7 @@ After generating a react application with the create react app generator tool, f
 2. All components are currently packaged together with their respective css, you will need to edit your webpack configuration to handle these files. 
 See [css-loader](https://github.com/webpack-contrib/css-loader).
 
-3. Import components as needed. See [Component Documentation](https://sap.github.io/fundamental-react/home) for examples and API details.
+3. Import components as needed. See [Component Documentation](https://sap.github.io/fundamental-react) for examples and API details.
 
 `import { Alert } from 'fundamental-react/Alert';`
 

@@ -11,5 +11,5 @@ This project requires:
 
 ## Getting Started
 
-Run `mvn spring-boot:run` to launch the application.
+Run `sudo mvn spring-boot:run` to launch the application.
 ^
