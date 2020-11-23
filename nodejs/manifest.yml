@@ -1,0 +1,7 @@
+---
+applications:
+- name: Emoji
+  host: d037518emoji
+  path: emoji
+  buildpack: nodejs_buildpack
+  memory: 128M

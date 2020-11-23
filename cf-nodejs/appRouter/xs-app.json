@@ -1,0 +1,9 @@
+{
+    "welcomeFile": "index.html",
+    "routes": [{
+        "source": "^/emoji",
+        "target": "/",
+        "destination": "emoji-dest",
+        "csrfProtection": false
+        }]
+}

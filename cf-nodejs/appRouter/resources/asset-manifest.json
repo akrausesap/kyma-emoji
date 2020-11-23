@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b1df2f73.chunk.css",
+    "main.js": "/static/js/main.7c60df63.chunk.js",
+    "main.js.map": "/static/js/main.7c60df63.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a5fc7545.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a5fc7545.js.map",
+    "static/css/2.9e1c14ec.chunk.css": "/static/css/2.9e1c14ec.chunk.css",
+    "static/js/2.236d8cd6.chunk.js": "/static/js/2.236d8cd6.chunk.js",
+    "static/js/2.236d8cd6.chunk.js.map": "/static/js/2.236d8cd6.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d10361e309a65da69feca8404668e004.js": "/precache-manifest.d10361e309a65da69feca8404668e004.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.9e1c14ec.chunk.css.map": "/static/css/2.9e1c14ec.chunk.css.map",
+    "static/css/main.b1df2f73.chunk.css.map": "/static/css/main.b1df2f73.chunk.css.map",
+    "static/js/2.236d8cd6.chunk.js.LICENSE": "/static/js/2.236d8cd6.chunk.js.LICENSE",
+    "static/media/fundamental-styles.css": "/static/media/SAP-icons.f5597eb2.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a5fc7545.js",
+    "static/css/2.9e1c14ec.chunk.css",
+    "static/js/2.236d8cd6.chunk.js",
+    "static/css/main.b1df2f73.chunk.css",
+    "static/js/main.7c60df63.chunk.js"
+  ]
+}

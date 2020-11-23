@@ -1,0 +1,16 @@
+{
+  "name": "emoji-cf",
+  "description": "CF Emojis",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "4.17.1",
+    "body-parser": "1.17.2"
+  },
+  "engines": {
+    "node": "12.x.x"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

@@ -1,0 +1,7 @@
+---
+applications:
+- name: emoji-react
+path: build/
+instances: 1
+buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+memory: 256M

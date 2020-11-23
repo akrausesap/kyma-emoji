@@ -1,0 +1,21 @@
+---
+applications:
+- name: emojicf
+  path: emoji
+  buildpack: nodejs_buildpack
+  memory: 128M
+- name: emojicfapr
+  host: emojicfapr
+  path: appRouter
+  buildpack: nodejs_buildpack
+  memory: 128M
+  env:
+    destinations: >
+      [
+        {"name":"emoji-dest",
+         "url":"https://emojicf.cfapps.eu10.hana.ondemand.com",
+         "forwardAuthToken": true}
+      ]
+  services:
+  - emojicf-al
+  - emojicf-uaa
