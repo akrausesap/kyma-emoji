@@ -1,7 +1,6 @@
-# NodeJS with Express
+# Cloud Foundry version of the emojify application
 
-Express is one of the most popular NodeJS backends frameworks in the world. It's a simple library to provide basic http routing. 
-To learn more about express click [here](https://expressjs.com/).
+This is a the nodejs variant of the emojify application adapted to be deployed on Cloud Foundry. 
 
 ## Requirements
 
