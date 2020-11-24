@@ -9,6 +9,7 @@ There are no special requiremenst to deploy the application to cloud foundry. Ev
 ## Preparation.
 
 1. Enable your Trial Instance of SAP Cloud Platform via https://cockpit.hanatrial.ondemand.com/trial/#/home/trial
+    1. Here is a small tutorial if necessary https://developers.sap.com/tutorials/hcp-create-trial-account.html
 2. Once your trial instance is ready enable cloud foundry an create a space if not yet available
 3. Goto to Subscriptions within your subaccount an enable the "SAP Business Application Studio"
 4. Open the SAP Business Application Studio via "Go to Application"
