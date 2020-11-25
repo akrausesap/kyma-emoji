@@ -3,6 +3,49 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const emojis = require('./emojis.json');
 const app = express();
+const passport = require('passport');
+const xssec = require('@sap/xssec');
+const JWTStrategy = require('@sap/xssec').JWTStrategy;
+const xsenv = require('@sap/xsenv');
+
+function log(logTxt) {
+    console.log(logTxt);
+}
+
+function logJWT(req) {
+    var jwt = req.header('authorization');
+    if (!jwt) {
+        log('No JWT in Request - Call performed directly to App');
+        return;
+    }
+    jwt = jwt.substring('Bearer '.length);
+    log('JWT is: ' + jwt);
+    xssec.createSecurityContext(jwt, xsenv.getServices({ uaa: 'emojicf-uaa' }).uaa, function(error, securityContext) {
+        if (error) {
+            log('Security Context creation failed');
+            return;
+        }
+        log('Security Context created successfully');
+        var userInfo = {
+            logonName : securityContext.getLogonName(),
+            giveName :  securityContext.getGivenName(),
+            familyName : securityContext.getFamilyName(),
+            email : securityContext.getEmail()
+        };
+        log('User Info retrieved successfully ' + JSON.stringify(userInfo));
+    });
+
+    if (req.user) {
+        var myUser = JSON.stringify(req.user);
+        var myUserAuth = JSON.stringify(req.authInfo);
+        log('2nd. XsSec API - user: ' + myUser + ' Security Context: ' + myUserAuth);
+    }
+    // see it using: cf logs sapcpcfhw --recent
+}
+
+passport.use(new JWTStrategy(xsenv.getServices({uaa:{tag:'xsuaa'}}).uaa));
+app.use(passport.initialize());
+app.use(passport.authenticate('JWT', { session: false }));
 
 /**
  * Parse application/x-www-form-urlencoded

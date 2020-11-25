@@ -4,8 +4,9 @@ applications:
   path: emoji
   buildpack: nodejs_buildpack
   memory: 128M
-- name: emojicfapr
-  host: emojicfapr
+  services:  
+  - emojicf-uaa
+- name: emojicfapr  
   path: appRouter
   buildpack: nodejs_buildpack
   memory: 128M
