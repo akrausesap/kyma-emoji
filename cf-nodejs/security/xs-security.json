@@ -1,0 +1,5 @@
+{
+ "xsappname": "emojicf",
+ "tenant-mode": "dedicated",
+ "description": "Approuter for Emojicf App"
+ }
