@@ -4,7 +4,7 @@ This is a the nodejs variant of the emojify application adapted to be deployed o
 
 ## Requirements
 
-There are no special requiremenst to deploy the application to cloud foundry. Everything needed will be handled in the description below.  
+There are no special requirements to deploy the application to cloud foundry. Everything needed will be handled in the description below.  
 
 ## Preparation.
 
