@@ -14,7 +14,7 @@ Either via the Business Application studio in the web (Option A), or via git and
 
 0. Create a SAP account on https://www.sap.com/account.html if you do not yet have one. If you need additional guidance, please follow this tutorial: https://developers.sap.com/tutorials/hcp-create-trial-account.html
 1. Enable your trial instance on the SAP Business Technology Platform via https://cockpit.hanatrial.ondemand.com/trial/#/home/trial
-2. Once your trial instance is ready, enable Cloud Foundry and create a subaccount if not yet available.
+2. Once your trial instance is ready, enter the subaccount "trial" which should be there already. (If it is missing, create a subaccount and enable Cloud Foundry for it.)
 
 #### Option A: Business Application Studio
 
@@ -28,7 +28,7 @@ Either via the Business Application studio in the web (Option A), or via git and
     2. Line 9 name --> same as in line 3, the name of the app router has to be unique. For example, once more add your name and a number to the existing name, so that it looks like this: emojicfaprjohndoe1337
     3. Line 17 url --> the part after "https://" has to match your application name in line 3, so in our example case the full URL looks as follows: "https://emojicfjohndoe1337.cfapps.eu10.hana.ondemand.com"
 8. Open a terminal via the Menu at the top border: Terminal --> New Terminal
-9. Type "cf login" to log on to your BTP Trial Instance (enter your matching API Endpoint for the region you chose when creating your account, e.g. https://api.cf.eu10.hana.ondemand.com for EU)
+9. Type `cf login` to log on to your BTP Trial Instance (enter your matching API Endpoint for the region you chose when creating your account, e.g. https://api.cf.eu10.hana.ondemand.com for EU)
 10. Navigate to the cf-nodejs subfolder via `cd cf-nodejs`
 11. Create the neccessary service instances: 
     1. Create the Authorization Service by typing:     `cf cs xsuaa application emojicf-uaa -c ./security/xs-security.json`
@@ -47,7 +47,7 @@ Either via the Business Application studio in the web (Option A), or via git and
     1. Line 3 name -->  change the name to be uniqe, e.g. add your name and a random number to the end of the existing application name. The application name needs to be unique (for all users). Warning: do not use underscores. A good example is emojicfjohndoe1337 ( but please do not use that, it is already taken. ;-) )
     2. Line 9 name --> same as in line 3, the name of the app router has to be unique. For example, once more add your name and a number to the existing name, so that it looks like this: emojicfaprjohndoe1337
     3. Line 17 url --> the part after "https://" has to match your application name in line 3, so in our example case the full URL looks as follows: "https://emojicfjohndoe1337.cfapps.eu10.hana.ondemand.com"
-5. Log into your BTP Trial Instance via cf login. As above, use your matching API endpoint, username and password.
+5. Log into your BTP Trial Instance via `cf login`. As above, use your matching API endpoint, username and password.
 6. Navigate to the cf-nodejs folder and run
     1. `cf cs xsuaa application emojicf-uaa -c ./security/xs-security.json`
     2. `cf cs application-logs lite emojicf-al`
